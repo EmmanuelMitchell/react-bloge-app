@@ -18,7 +18,7 @@ export default function Navbar() {
             />
           </form>
         </div>
-        <ul className="hidden md:flex gap-4 text-xl font-mono">
+        <ul className="hidden md:flex items-center gap-4 text-xl font-mono">
           <li className="hover:bg-blue-400 p-2 rounded-md cursor-pointer">
             <Link to="/">Home</Link>
           </li>
@@ -27,6 +27,15 @@ export default function Navbar() {
           </li>
           <li className="hover:bg-blue-400 p-2 rounded-md cursor-pointer">
             <Link to="about">About</Link>
+          </li>
+
+          <li>
+            <Link
+              className="bg-blue-600 p-2 rounded-md hover:bg-slate-500"
+              to="sign-in"
+            >
+              SignIn
+            </Link>
           </li>
         </ul>
         <span
